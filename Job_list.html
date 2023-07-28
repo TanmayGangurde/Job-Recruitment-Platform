@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job-listing Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(120deg, #2980b9, #8e44ad);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+        }
+
+        .job-listings-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .job-listing {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .job-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .job-description {
+            color: #444;
+        }
+
+        .apply-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .apply-button:hover {
+            background-color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="job-listings-container">
+            <div class="job-listing">
+                <div class="job-title">Frontend Developer</div>
+                <div class="job-description">
+                    We are looking for a skilled Frontend Developer to join our team. You will be responsible for developing user interfaces for web applications using HTML, CSS, and JavaScript. The ideal candidate should have a strong understanding of frontend technologies and be able to work effectively in a team environment.
+                </div>
+                <a href="Apply.html">
+                    <button class="apply-button">Apply Now</button>
+                </a>
+            </div>
+
+            <div class="job-listing">
+                <div class="job-title">Backend Developer</div>
+                <div class="job-description">
+                    We are seeking an experienced Backend Developer to join our dynamic team. As a Backend Developer, you will be responsible for building scalable server-side applications and integrating with databases and APIs.
+                </div>
+                <a href="Apply.html">
+                    <button class="apply-button">Apply Now</button>
+                </a>
+            </div>
+
+            <div class="job-listing">
+                <div class="job-title">UI/UX Designer</div>
+                <div class="job-description">
+                    We are looking for a creative UI/UX Designer to join our design team. As a UI/UX Designer, you will be responsible for designing intuitive and visually appealing user interfaces for our web and mobile applications.
+                </div>
+                <a href="Apply.html">
+                    <button class="apply-button">Apply Now</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help and Support</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+    <style>
+        /* Your provided CSS code */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(120deg, #2980b9, #8e44ad);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+        }
+
+        /* Additional styles for the Help and Support Page */
+        .section-heading {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .contact-info span {
+            font-weight: bold;
+        }
+
+        .faq-section {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            color: #444;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="section-heading">Help and Support</div>
+
+        <div class="contact-info">
+            <div><span>Email:</span> support@example.com</div>
+            <div><span>Phone:</span> +1 (123) 456-7890</div>
+            <div><span>Working Hours:</span> Monday - Friday, 9:00 AM to 6:00 PM (GMT)</div>
+        </div>
+
+        <div class="faq-section">
+            <div class="faq-question" onclick="toggleFAQ('faq1')">How do I create an account?</div>
+            <div class="faq-answer" id="faq1">
+                To create an account, click on the "Sign Up" button on the top right corner of the page. Fill out the required information and click "Create Account" to complete the registration process.
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <div class="faq-question" onclick="toggleFAQ('faq2')">How can I reset my password?</div>
+            <div class="faq-answer" id="faq2">
+                If you forget your password, click on the "Forgot Password" link on the login page. Enter your email address, and we will send you instructions to reset your password.
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <div class="faq-question" onclick="toggleFAQ('faq3')">What payment methods do you accept?</div>
+            <div class="faq-answer" id="faq3">
+                We accept payments through major credit cards, including Visa, Mastercard, and American Express. You can also pay using PayPal.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(faqId) {
+            var faqAnswer = document.getElementById(faqId);
+            if (faqAnswer.style.display === "none") {
+                faqAnswer.style.display = "block";
+            } else {
+                faqAnswer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

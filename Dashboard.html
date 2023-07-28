@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard: Job Recruitment Platform </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #2980b9, #8e44ad);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+        }
+
+        .dashboard-heading {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .job-listings {
+            margin-bottom: 20px;
+        }
+
+        .job-listing-item {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .job-description {
+            color: #444;
+        }
+
+        .applicant-statistics {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .applicant-statistics-item {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 16px;
+            color: #444;
+        }
+
+        .recent-applications {
+            text-align: center;
+        }
+
+        .recent-application-item {
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .applicant-name {
+            font-weight: bold;
+        }
+
+        .application-date {
+            color: #666;
+        }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .dashboard {
+        display: flex;
+      }
+
+      .sidebar {
+        width: 250px;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+
+      .main-content {
+        flex: 1;
+        padding: 20px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar">
+        <!-- Sidebar content goes here -->
+        <ul>
+          <li>Dashboard</li>
+          <li>Analytics</li>
+          <li>Reports</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+      <div class="main-content">
+        <!-- Main content goes here -->
+        <center>
+            <h1>Welcome to the Dashboard</h1>
+            <p>
+                Here you can add various charts, graphs, tables, and other components
+                to display data.
+            </p>
+        </center>
+      </div>
+    </div>
+    <div class="center">
+        <div class="dashboard-heading">Job Recruitment Platform Dashboard</div>
+
+        <div class="job-listings">
+            <div class="job-listing-item">
+                <div class="job-title">Frontend Developer</div>
+                <div class="job-description">We are looking for a skilled frontend developer...</div>
+            </div>
+
+            <div class="job-listing-item">
+                <div class="job-title">Backend Developer</div>
+                <div class="job-description">Join our team as a backend developer and work on...</div>
+            </div>
+
+            <!-- Add more job listings here as needed -->
+        </div>
+
+        <div class="applicant-statistics">
+            <div class="applicant-statistics-item">Total Applicants: 150</div>
+            <div class="applicant-statistics-item">Shortlisted: 50</div>
+            <div class="applicant-statistics-item">Rejected: 80</div>
+            <div class="applicant-statistics-item">On Hold: 20</div>
+        </div>
+
+        <div class="recent-applications">
+            <div class="recent-application-item">
+                <div class="applicant-name">John Doe</div>
+                <div class="application-date">Applied on: July 26, 2023</div>
+            </div>
+
+            <div class="recent-application-item">
+                <div class="applicant-name">Jane Smith</div>
+                <div class="application-date">Applied on: July 25, 2023</div>
+            </div>
+
+            <!-- Add more recent applications here as needed -->
+        </div>
+    </div>
+  </body>
+</html>
